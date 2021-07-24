@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+/CUsersRahulAppDataRoamingnpm
 
 # misc
 .DS_Store

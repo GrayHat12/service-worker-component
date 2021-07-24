@@ -38,10 +38,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "build": "npm run document && npm run clean && tsc && cp package.json README.md ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "document": "npx typedoc --out docs src/lib/index.tsx src/lib/types.ts"
   },
   "eslintConfig": {
     "extends": [

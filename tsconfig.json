@@ -17,12 +17,12 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "dist",
+    "removeComments": false
   },
   "include": [
-    "src"
+    "src/lib"
   ]
 }
