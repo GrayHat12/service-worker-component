@@ -1,4 +1,6 @@
 {
     "contents": "./dist",
-    "yarn": false
+    "yarn": false,
+    "tests": false,
+    "cleanup": false
 }
