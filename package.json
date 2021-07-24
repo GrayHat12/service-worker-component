@@ -1,6 +1,6 @@
 {
   "name": "service-worker-component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "homepage": "https://grayhat12.github.io/service-worker-component/",
