@@ -1,3 +1,4 @@
 {
-    "contents": "./dist"
+    "contents": "./dist",
+    "yarn": false
 }
