@@ -5,3 +5,11 @@
 ---
 
 Provides A `ServiceWorkerProvider` context that makes it easier for you to implement PWA features.
+
+## Installation
+
+`npm install service-worker-component`
+
+## Usage
+
+Check out the example [here](https://github.com/GrayHat12/service-worker-component/blob/master/src/index.tsx)
