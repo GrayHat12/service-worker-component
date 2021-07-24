@@ -10,6 +10,16 @@ Provides A `ServiceWorkerProvider` context that makes it easier for you to imple
 
 `npm install service-worker-component`
 
+## Features
+
+- Full control over **Installation**
+- Controls for enabling and disabling **Web Push Notifications**.
+- Easy to control **Updates** for service worker improving user experience.
+
 ## Usage
 
 Check out the example [here](https://github.com/GrayHat12/service-worker-component/blob/master/src/index.tsx)
+
+## Documentation
+
+A basic documentation is available at [https://grayhat12.github.io/service-worker-component/](https://grayhat12.github.io/service-worker-component/)

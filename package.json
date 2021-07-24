@@ -1,8 +1,9 @@
 {
   "name": "service-worker-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "homepage": "https://grayhat12.github.io/service-worker-component/",
   "files": [
     "dist",
     "README.md"
@@ -12,6 +13,17 @@
     "url": "https://github.com/GrayHat12/service-worker-component"
   },
   "private": false,
+  "author": {
+    "name": "GratHat12",
+    "email": "grayhathacks10@gmail.com"
+  },
+  "keywords": [
+    "ReactJS",
+    "PWA",
+    "Service Worker",
+    "Progressive Web App"
+  ],
+  "description": "This provides a easy to use context for service workers",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
