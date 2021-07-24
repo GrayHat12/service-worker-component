@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { useServiceWorker, ServiceWorkerProvider } from "./lib";
+import * as serviceWorker from "./serviceWorkerRegistration";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Example: React.FC = () => {
+
+    const object = useServiceWorker();
+
+    return (
+        <>
+            {JSON.stringify(object)}
+        </>
+    );
+};
+
+ReactDOM.render((
+    <ServiceWorkerProvider
+        serviceWorker={serviceWorker}
+        onAppInstalled={() => console.log('App Installed')}
+        APPLICATION_SERVER_PUBLIC_KEY="YOUR_APP_PUBLIC_KEY"
+        onUpdateNotificationSubscription={console.log}
+    >
+        <Example />
+    </ServiceWorkerProvider>
+), document.getElementById("root"));
