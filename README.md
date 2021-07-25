@@ -20,6 +20,8 @@ Provides A `ServiceWorkerProvider` context that makes it easier for you to imple
 
 Check out the example [here](https://github.com/GrayHat12/service-worker-component/blob/master/src/index.tsx)
 
+Check out a sample [Service Worker Registration Script](https://github.com/GrayHat12/service-worker-component/blob/master/src/serviceWorkerRegistration.js)
+
 ## Documentation
 
 A basic documentation is available at [https://grayhat12.github.io/service-worker-component/](https://grayhat12.github.io/service-worker-component/)
