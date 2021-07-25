@@ -1,6 +1,6 @@
 {
   "name": "service-worker-component",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "homepage": "https://grayhat12.github.io/service-worker-component/",
@@ -8,6 +8,7 @@
     "dist",
     "README.md"
   ],
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/GrayHat12/service-worker-component"
@@ -38,11 +39,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run document && npm run clean && tsc && cp package.json README.md ./dist",
+    "build": "build.bat",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rm -rf dist",
-    "document": "npx typedoc --out docs src/lib/index.tsx src/lib/types.ts"
+    "clean": "rmdir /s /q dist",
+    "document": "typedoc --out docs src/lib/index.tsx src/lib/types.ts"
   },
   "eslintConfig": {
     "extends": [
